@@ -80,7 +80,7 @@ if minetest.get_modpath("moreblocks") ~= nil then
 	register_technic_stairs_alias("stairsplus", "granite", "technic", "granite")
 	register_technic_stairs_alias("stairsplus", "marble_bricks", "technic", "marble_bricks")
 end
-if circular_saw OR minetest.get_modpath("circularsaw") ~= nil then
+if circular_saw or minetest.get_modpath("circularsaw") ~= nil then
 	for i,v in ipairs({"concrete",  "marble",  "marble_bricks",  "granite",  "default:obsidian"}) do
 		table.insert(circular_saw.known_stairs, "technic:" ..v);
 	end
