@@ -74,6 +74,16 @@ if minetest.get_modpath("moreblocks") ~= nil then
 		"uranium_block",
 		"facedir",
 		0)
+	if minetest.get_modpath("moreores") ~= nil then
+		register_stair_slab_panel_micro("moreores", "tin_block", "moreores:tin_block",
+			{cracky=1, level=2, not_in_creative_inventory=1},
+			{"moreores_tin_block.png"},
+			"Tin block",
+			"tin_block",
+			"facedir",
+			0)
+		table.insert(circular_saw.known_stairs, "moreores:tin_block");
+	end
 
 	function register_technic_stairs_alias(modname, origname, newmod, newname)
 		minetest.register_alias(modname .. ":slab_" .. origname, newmod..":slab_" .. newname)
