@@ -79,7 +79,7 @@ minetest.register_craftitem( "technic:copper_dust", {
 			     })
 minetest.register_craft({
 			   type = "cooking",
-			   output = "moreores:copper_ingot",
+			   output = "default:copper_ingot",
 			   recipe = "technic:copper_dust",
 			})
 
@@ -277,7 +277,7 @@ minetest.register_abm(
 		 local machine_name         = "Grinder"
 		 local machine_node         = "technic:grinder"
 		 local machine_state_demand = { 50, 300 }
-			 
+
 		 -- Setup meta data if it does not exist. state is used as an indicator of this
 		 if state == 0 then
 		    meta:set_int("state", 1)
@@ -285,10 +285,10 @@ minetest.register_abm(
 		    meta:set_int("LV_EU_input", 0)
 		    return
 		 end
-			 
+
 		 -- Power off automatically if no longer connected to a switching station
 		 technic.switching_station_timeout_count(pos, "LV")
-			 
+
 		 -- State machine
 		 if eu_input == 0 then
 		    -- unpowered - go idle
@@ -297,7 +297,7 @@ minetest.register_abm(
 		    next_state = 1
 		 elseif eu_input == machine_state_demand[state] then
 		    -- Powered - do the state specific actions
-			    
+
 		    local inv    = meta:get_inventory()
 		    local empty  = inv:is_empty("src")
 

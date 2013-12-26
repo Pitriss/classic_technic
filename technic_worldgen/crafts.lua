@@ -45,7 +45,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "craft technic:uranium 9",
+	output = "technic:uranium 9",
 	recipe = {{"technic:uranium_block"}}
 })
 
@@ -57,7 +57,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "craft technic:chromium_ingot 9",
+	output = "technic:chromium_ingot 9",
 	recipe = {{"technic:chromium_block"}}
 })
 
@@ -69,7 +69,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "craft technic:zinc_ingot 9",
+	output = "technic:zinc_ingot 9",
 	recipe = {{"technic:zinc_block"}}
 })
 
@@ -81,7 +81,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "craft technic:stainless_steel_ingot 9",
+	output = "technic:stainless_steel_ingot 9",
 	recipe = {{"technic:stainless_steel_block"}}
 })
 
@@ -93,7 +93,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "craft technic:brass_ingot 9",
+	output = "technic:brass_ingot 9",
 	recipe = {{"technic:brass_block"}}
 })
 
