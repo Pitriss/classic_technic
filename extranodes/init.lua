@@ -35,13 +35,45 @@ if minetest.get_modpath("moreblocks") ~= nil then
 		"facedir",
 		0)
 
-	--register nodes in circular saw if aviable
--- 	if circular_saw then
--- 		for i,v in ipairs({"concrete",  "marble",  "marble_bricks",  "granite",  "default:obsidian"}) do
--- 			table.insert(circular_saw.known_stairs, "technic:" ..v);
--- 		end
--- 	end
+	register_stair_slab_panel_micro("technic", "zinc_block", "technic:zinc_block",
+		{cracky=1, level=2, not_in_creative_inventory=1},
+		{"technic_zinc_block.png"},
+		"Zinc block",
+		"zinc_block",
+		"facedir",
+		0)
 
+	register_stair_slab_panel_micro("technic", "stainless_steel_block", "technic:stainless_steel_block",
+		{cracky=1, level=2, not_in_creative_inventory=1},
+		{"technic_stainless_steel_block.png"},
+		"Zinc block",
+		"zinc_block",
+		"facedir",
+		0)
+
+	register_stair_slab_panel_micro("technic", "brass_block", "technic:brass_block",
+		{cracky=1, level=2, not_in_creative_inventory=1},
+		{"technic_brass_block.png"},
+		"Brass block",
+		"brass_block",
+		"facedir",
+		0)
+
+	register_stair_slab_panel_micro("technic", "chromium_block", "technic:chromium_block",
+		{cracky=1, level=2, not_in_creative_inventory=1},
+		{"technic_chromium_block.png"},
+		"Chromium block",
+		"chromium_block",
+		"facedir",
+		0)
+
+	register_stair_slab_panel_micro("technic", "uranium_block", "technic:uranium_block",
+		{cracky=1, level=2, not_in_creative_inventory=1},
+		{"technic_uranium_block.png"},
+		"Uranium block",
+		"uranium_block",
+		"facedir",
+		0)
 
 	function register_technic_stairs_alias(modname, origname, newmod, newname)
 		minetest.register_alias(modname .. ":slab_" .. origname, newmod..":slab_" .. newname)
@@ -79,9 +111,8 @@ if minetest.get_modpath("moreblocks") ~= nil then
 	register_technic_stairs_alias("stairsplus", "marble", "technic", "marble")
 	register_technic_stairs_alias("stairsplus", "granite", "technic", "granite")
 	register_technic_stairs_alias("stairsplus", "marble_bricks", "technic", "marble_bricks")
-end
-if circular_saw or minetest.get_modpath("circularsaw") ~= nil then
-	for i,v in ipairs({"concrete",  "marble",  "marble_bricks",  "granite",  "default:obsidian"}) do
+
+	for i,v in ipairs({"concrete",  "marble",  "marble_bricks",  "granite",  "default:obsidian", "zinc_block", "steel_block", "uranium_block", "chromium_block", "stainless_steel_block", "brass_block" }) do
 		table.insert(circular_saw.known_stairs, "technic:" ..v);
 	end
 end

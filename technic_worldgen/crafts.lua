@@ -38,7 +38,7 @@ minetest.register_craftitem( ":technic:brass_ingot", {
 })
 
 minetest.register_craft({
-	output = "node technic:uranium_block",
+	output = "technic:uranium_block",
 	recipe = {{"technic:uranium", "technic:uranium", "technic:uranium"},
 		  {"technic:uranium", "technic:uranium", "technic:uranium"},
 		  {"technic:uranium", "technic:uranium", "technic:uranium"}}
@@ -50,7 +50,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "node technic:chromium_block",
+	output = "technic:chromium_block",
 	recipe = {{"technic:chromium_ingot", "technic:chromium_ingot", "technic:chromium_ingot"},
 		  {"technic:chromium_ingot", "technic:chromium_ingot", "technic:chromium_ingot"},
 		  {"technic:chromium_ingot", "technic:chromium_ingot", "technic:chromium_ingot"}}
@@ -62,7 +62,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "node technic:zinc_block",
+	output = "technic:zinc_block",
 	recipe = {{"technic:zinc_ingot", "technic:zinc_ingot", "technic:zinc_ingot"},
 		  {"technic:zinc_ingot", "technic:zinc_ingot", "technic:zinc_ingot"},
 		  {"technic:zinc_ingot", "technic:zinc_ingot", "technic:zinc_ingot"}}
@@ -74,7 +74,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "node technic:stainless_steel_block",
+	output = "technic:stainless_steel_block",
 	recipe = {{"technic:stainless_steel_ingot", "technic:stainless_steel_ingot", "technic:stainless_steel_ingot"},
 		  {"technic:stainless_steel_ingot", "technic:stainless_steel_ingot", "technic:stainless_steel_ingot"},
 		  {"technic:stainless_steel_ingot", "technic:stainless_steel_ingot", "technic:stainless_steel_ingot"}}
@@ -86,10 +86,10 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "node group:brass_block",
-	recipe = {{"technic:brass_ingot", "technic:brass_ingot", "technic:brass_ingot"},
-		  {"technic:brass_ingot", "technic:brass_ingot", "technic:brass_ingot"},
-		  {"technic:brass_ingot", "technic:brass_ingot", "technic:brass_ingot"}}
+	output = "technic:brass_block",
+	recipe = {{"group:brass_ingot", "group:brass_ingot", "group:brass_ingot"},
+		  {"group:brass_ingot", "group:brass_ingot", "group:brass_ingot"},
+		  {"group:brass_ingot", "group:brass_ingot", "group:brass_ingot"}}
 })
 
 minetest.register_craft({
