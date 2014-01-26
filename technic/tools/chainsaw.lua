@@ -84,10 +84,10 @@ if( minetest.get_modpath("moretrees") ~= nil ) then
                 timber_nodenames["moretrees:oak_leaves"]               = true
                 timber_nodenames["moretrees:sequoia_leaves"]           = true
                 timber_nodenames["moretrees:birch_leaves"]             = true
-                timber_nodenames["moretrees:birch_leaves"]             = true
                 timber_nodenames["moretrees:palm_leaves"]              = true
                 timber_nodenames["moretrees:spruce_leaves"]            = true
-                timber_nodenames["moretrees:spruce_leaves"]            = true
+                timber_nodenames["moretrees:fir_leaves"]               = true
+                timber_nodenames["moretrees:fir_leaves_bright"]        = true
                 timber_nodenames["moretrees:pine_leaves"]              = true
                 timber_nodenames["moretrees:willow_leaves"]            = true
                 timber_nodenames["moretrees:rubber_tree_leaves"]       = true
@@ -95,6 +95,13 @@ if( minetest.get_modpath("moretrees") ~= nil ) then
                 timber_nodenames["moretrees:jungletree_leaves_yellow"] = true
                 timber_nodenames["moretrees:jungletree_leaves_red"]    = true
         end
+end
+
+
+-- Support farming_plus if it is there
+if( minetest.get_modpath("farming_plus") ~= nil ) then
+        timber_nodenames["farming_plus:banana_leaves"]                 = true
+        timber_nodenames["farming_plus:cocoa_leaves"]                  = true
 end
 
 -- Support growing_trees if it is there
