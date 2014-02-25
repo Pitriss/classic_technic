@@ -48,6 +48,9 @@ technic.register_alloy_recipe("technic:copper_dust",  2, "technic:zinc_dust",   
 technic.register_alloy_recipe("default:copper_ingot", 2, "technic:zinc_ingot",    1, "technic:brass_ingot",          3)
 technic.register_alloy_recipe("default:sand",         2, "technic:coal_dust",     2, "technic:silicon_wafer",        1)
 technic.register_alloy_recipe("technic:silicon_wafer",1, "technic:gold_dust",     1, "technic:doped_silicon_wafer",  1)
+technic.register_alloy_recipe("default:copperblock",  3, "moreores:tin_block",    1, "default:bronzeblock",          4)
+technic.register_alloy_recipe("default:steelblock",   3, "technic:chromium_block",1, "technic:stainless_steel_block",4)
+technic.register_alloy_recipe("default:copperblock", 2, "technic:zinc_block",    1, "technic:brass_block",          3)
 
 --------------------------------------
 -- LEGACY CODE - some other mods might depend on this - Register the same recipes as above...
@@ -90,4 +93,7 @@ register_alloy_recipe ("technic:copper_dust",2, "technic:zinc_dust",1, "technic:
 register_alloy_recipe ("default:copper_ingot",2, "technic:zinc_ingot",1, "technic:brass_ingot",3)
 register_alloy_recipe ("default:sand",2, "technic:coal_dust",2, "technic:silicon_wafer",1)
 register_alloy_recipe ("technic:silicon_wafer",1, "technic:gold_dust",1, "technic:doped_silicon_wafer",1)
+register_alloy_recipe ("default:copperblock",3, "moreores:tin_block",1, "default:bronzeblock",4)
+register_alloy_recipe ("default:steelblock",3, "technic:chromium_block",1, "technic:stainless_steel_block",4)
+register_alloy_recipe ("default:copperblock",2, "technic:zinc_block",1, "technic:brass_block",3)
 
